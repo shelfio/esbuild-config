@@ -23,7 +23,7 @@
   ],
   "scripts": {
     "lint": "yarn lint:ci --fix",
-    "lint:ci": "eslint . --ext .js,.ts,.json",
+    "lint:ci": "eslint . --ext .js,.ts,.json"
   },
   "lint-staged": {
     "*.{html,md,yml}": [
