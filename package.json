@@ -1,17 +1,25 @@
 {
-  "name": "@shelf/xxxxxx",
+  "name": "@shelf/esbuild-config",
   "version": "0.0.0",
-  "description": "xxxxxx",
+  "description": "A collection of configurations and utilities to help you build projects or libraries using esbuild. Includes plugins for common tasks like transpiling TypeScript and compiling SASS and styled-components, as well as presets for React.",
   "license": "MIT",
   "author": {
-    "name": "Vlad Holubiev",
-    "email": "vlad@shelf.io",
+    "name": "Andrii Myroniuk",
+    "email": "andrii.myroniuk@shelf.io",
     "url": "https://shelf.io"
   },
-  "main": "lib",
-  "types": "lib/index.d.ts",
   "files": [
-    "lib"
+    "common.js",
+    "frontend.js"
+  ],
+  "keywords": [
+    "esbuild",
+    "build",
+    "config",
+    "typescript",
+    "sass",
+    "react",
+    "library"
   ],
   "scripts": {
     "build": "rm -rf lib/ && yarn build:types && yarn build:code",
@@ -20,10 +28,7 @@
     "coverage": "yarn test --coverage",
     "lint": "yarn lint:ci --fix",
     "lint:ci": "eslint . --ext .js,.ts,.json",
-    "prepack": "yarn build",
-    "test": "TZ=UTC jest src",
-    "type-check": "tsc --noEmit",
-    "type-check:watch": "npm run type-check -- --watch"
+    "prepack": "yarn build"
   },
   "lint-staged": {
     "*.{html,md,yml}": [
@@ -36,26 +41,20 @@
       ".husky/validate-circleci-config.sh"
     ]
   },
-  "babel": {
-    "extends": "@shelf/babel-config/backend"
-  },
   "prettier": "@shelf/prettier-config",
-  "dependencies": {},
+  "dependencies": {
+    "esbuild": "0.17.11",
+    "esbuild-sass-plugin": "2.6.0"
+  },
   "devDependencies": {
-    "@babel/cli": "7.21.0",
-    "@babel/core": "7.21.0",
-    "@shelf/babel-config": "1.2.0",
     "@shelf/eslint-config": "2.29.0",
     "@shelf/prettier-config": "1.0.0",
-    "@shelf/tsconfig": "0.0.11",
-    "@types/jest": "29.4.0",
     "@types/node": "16",
     "eslint": "8.36.0",
     "husky": "8.0.3",
-    "jest": "29.5.0",
+    "jest": "27.4.5",
     "lint-staged": "13.2.0",
-    "prettier": "2.8.4",
-    "typescript": "4.9.5"
+    "prettier": "2.8.4"
   },
   "engines": {
     "node": ">=16"
