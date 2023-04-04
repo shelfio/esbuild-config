@@ -16,7 +16,7 @@ const build = async ({
   entryPoints = ['src/index.ts'],
   target = ['esnext', 'node16'],
   config,
-  platform = 'browser',
+  platform = 'node',
   metafile = false,
 }) => {
   const result = await esbuild
