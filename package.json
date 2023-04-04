@@ -23,11 +23,11 @@
       "import": "./index.js",
       "require": "./index.js"
     },
-    "frontend": {
+    "./frontend": {
       "import": "./frontend.js",
       "require": "./frontend.js"
     },
-    "common": {
+    "./common": {
       "import": "./common.js",
       "require": "./common.js"
     }
@@ -36,7 +36,8 @@
   "module": "./index.js",
   "files": [
     "common.js",
-    "frontend.js"
+    "frontend.js",
+    "index.js"
   ],
   "scripts": {
     "lint": "yarn lint:ci --fix",
