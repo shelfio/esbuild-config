@@ -8,6 +8,7 @@
     "email": "andrii.myroniuk@shelf.io",
     "url": "https://shelf.io"
   },
+  "type": "module",
   "files": [
     "common.js",
     "frontend.js"

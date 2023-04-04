@@ -19,7 +19,7 @@ const build = ({
   config,
   platform = 'browser',
   metafile = false,
-  sassConfig,
+  sassConfig = {cssImports: true, type: 'style'},
 }) => {
   common({
     entryPoints,
