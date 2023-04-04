@@ -1,6 +1,6 @@
 {
   "name": "@shelf/esbuild-config",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A collection of configurations and utilities to help you build projects or libraries using esbuild. Includes plugins for common tasks like transpiling TypeScript and compiling SASS and styled-components, as well as presets for React.",
   "keywords": [
     "esbuild",
