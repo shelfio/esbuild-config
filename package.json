@@ -2,17 +2,6 @@
   "name": "@shelf/esbuild-config",
   "version": "0.1.0",
   "description": "A collection of configurations and utilities to help you build projects or libraries using esbuild. Includes plugins for common tasks like transpiling TypeScript and compiling SASS and styled-components, as well as presets for React.",
-  "license": "MIT",
-  "author": {
-    "name": "Andrii Myroniuk",
-    "email": "andrii.myroniuk@shelf.io",
-    "url": "https://shelf.io"
-  },
-  "type": "module",
-  "files": [
-    "common.js",
-    "frontend.js"
-  ],
   "keywords": [
     "esbuild",
     "build",
@@ -21,6 +10,33 @@
     "sass",
     "react",
     "library"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Andrii Myroniuk",
+    "email": "andrii.myroniuk@shelf.io",
+    "url": "https://shelf.io"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "require": "./index.js"
+    },
+    "frontend": {
+      "import": "./frontend.js",
+      "require": "./frontend.js"
+    },
+    "common": {
+      "import": "./common.js",
+      "require": "./common.js"
+    }
+  },
+  "main": "./index.js",
+  "module": "./index.js",
+  "files": [
+    "common.js",
+    "frontend.js"
   ],
   "scripts": {
     "lint": "yarn lint:ci --fix",
