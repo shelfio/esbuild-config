@@ -56,7 +56,7 @@
   },
   "prettier": "@shelf/prettier-config",
   "dependencies": {
-    "esbuild": "0.17.14",
+    "esbuild": "0.17.15",
     "esbuild-sass-plugin": "2.8.0"
   },
   "devDependencies": {
