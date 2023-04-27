@@ -60,7 +60,7 @@
     "esbuild-sass-plugin": "2.8.0"
   },
   "devDependencies": {
-    "@shelf/eslint-config": "2.29.0",
+    "@shelf/eslint-config": "2.29.1",
     "@shelf/prettier-config": "1.0.0",
     "@types/node": "16",
     "eslint": "8.38.0",
