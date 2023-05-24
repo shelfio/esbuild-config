@@ -33,6 +33,8 @@ const build = async ({
       treeShaking: true,
       splitting: true,
       packages: 'external',
+      entryNames: '[name]',
+      ignoreAnnotations: true,
       metafile,
       ...config,
     })
