@@ -1,9 +1,18 @@
 version: 2.1
 
+orbs:
+  node: circleci/node@7.0.0
+
+parameters:
+  node_version:
+    type: string
+    default: '22.12.0'
+
 jobs:
   publish:
-    docker:
-      - image: cimg/node:22.12.0
+    executor:
+      name: node/default
+      tag: << pipeline.parameters.node_version >>
     steps:
       - checkout
       - run:
@@ -20,4 +29,3 @@ workflows:
           filters:
             tags:
               only: /v[0-9]+(\.[0-9]+)*/
-
