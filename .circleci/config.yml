@@ -19,7 +19,8 @@ jobs:
           name: Publish to NPM
           command: |
             npm set //registry.npmjs.org/:_authToken=$NPM_TOKEN
-            npm publish
+            VERSION=$(node -p "require('./package.json').version")
+            npm info @shelf/esbuild-config@$VERSION > /dev/null 2>&1 || npm publish
 
 workflows:
   tagged-build:
