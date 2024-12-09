@@ -46,8 +46,7 @@
   },
   "lint-staged": {
     "*.{html,md,yml}": "prettier --write",
-    "*.{js,ts,json}": "eslint --fix",
-    ".circleci/config.yml": ".husky/validate-circleci-config.sh"
+    "*.{js,ts,json}": "eslint --fix"
   },
   "prettier": "@shelf/prettier-config",
   "dependencies": {
