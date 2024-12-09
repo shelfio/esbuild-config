@@ -41,8 +41,7 @@
   ],
   "scripts": {
     "lint": "yarn lint:ci --fix",
-    "lint:ci": "eslint .",
-    "prepare": "husky"
+    "lint:ci": "eslint ."
   },
   "lint-staged": {
     "*.{html,md,yml}": "prettier --write",
