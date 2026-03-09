@@ -46,7 +46,7 @@
   "prettier": "@shelf/prettier-config",
   "dependencies": {
     "esbuild": "0.25.0",
-    "esbuild-sass-plugin": "3.3.1"
+    "esbuild-sass-plugin": "3.7.0"
   },
   "devDependencies": {
     "@shelf/eslint-config": "4.2.1",
