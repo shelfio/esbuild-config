@@ -49,9 +49,9 @@
     "esbuild-sass-plugin": "3.3.1"
   },
   "devDependencies": {
-    "@shelf/eslint-config": "4.2.1",
+    "@shelf/eslint-config": "7.1.0",
     "@shelf/prettier-config": "1.0.0",
-    "eslint": "9.16.0",
+    "eslint": "10.8.0",
     "husky": "9.1.7",
     "jest": "29.7.0",
     "lint-staged": "15.2.10",
