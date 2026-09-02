@@ -1,4 +1,4 @@
-# @shelf/esbuild-config ![](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)
+# @shelf/esbuild-config ![](https://img.shields.io/badge/code_style-oxfmt-ff69b4.svg)
 
 > A collection of configurations and utilities to help you build projects or libraries using esbuild. This package includes plugins for common tasks like transpiling TypeScript and compiling SASS and styled-components, as well as presets for React.
 
