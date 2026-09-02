@@ -5,7 +5,7 @@
 ## Install
 
 ```
-$ yarn add -D @shelf/esbuild-config
+$ pnpm add -D @shelf/esbuild-config
 ```
 
 ## Usage
@@ -37,8 +37,8 @@ Both functions accept a similar set of options that you can use to customize the
 
 ```sh
 $ git checkout master
-$ yarn version
-$ yarn publish
+$ pnpm version
+$ pnpm publish
 $ git push origin master --tags
 ```
 
