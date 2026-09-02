@@ -40,7 +40,7 @@
     "index.js"
   ],
   "scripts": {
-    "lint": "yarn lint:ci --fix",
+    "lint": "pnpm lint:ci --fix",
     "lint:ci": "eslint ."
   },
   "prettier": "@shelf/prettier-config",
