@@ -9,6 +9,7 @@ $ pnpm add -D @shelf/esbuild-config
 ```
 
 ## Usage
+
 Once installed, you can use esbuild-config to configure and run your esbuild builds. The package provides two utility functions, common() and frontend(), that you can import and call from your build scripts:
 
 ```js
@@ -31,6 +32,7 @@ await frontend({
   // ...
 });
 ```
+
 Both functions accept a similar set of options that you can use to customize the build process according to your needs. Check the JSDoc comments in the code for more information on the available options.
 
 ## Publish
