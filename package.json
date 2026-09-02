@@ -12,6 +12,7 @@
     "library"
   ],
   "license": "MIT",
+  "packageManager": "pnpm@11.18.0",
   "author": {
     "name": "Andrii Myroniuk",
     "email": "andrii.myroniuk@shelf.io",
@@ -40,7 +41,7 @@
     "index.js"
   ],
   "scripts": {
-    "lint": "yarn lint:ci --fix",
+    "lint": "pnpm lint:ci --fix",
     "lint:ci": "eslint ."
   },
   "prettier": "@shelf/prettier-config",
