@@ -41,6 +41,7 @@
     "index.js"
   ],
   "scripts": {
+    "find-deadcode": "knip --no-progress",
     "lint": "oxfmt && eslint . --fix",
     "lint:ci": "oxfmt --check && eslint ."
   },
@@ -54,6 +55,7 @@
     "eslint": "10.8.0",
     "husky": "9.1.7",
     "jest": "30.4.2",
+    "knip": "6.38.0",
     "lint-staged": "15.2.10",
     "oxfmt": "0.64.0",
     "typescript": "6.0.3"
