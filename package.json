@@ -43,7 +43,8 @@
   "scripts": {
     "find-deadcode": "knip --no-progress",
     "lint": "oxfmt && eslint . --fix",
-    "lint:ci": "oxfmt --check && eslint ."
+    "lint:ci": "oxfmt --check && eslint .",
+    "prepare": "husky"
   },
   "dependencies": {
     "esbuild": "0.25.0",
