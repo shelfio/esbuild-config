@@ -12,7 +12,7 @@
     "library"
   ],
   "license": "MIT",
-  "packageManager": "pnpm@11.18.0",
+  "packageManager": "pnpm@12.6.0",
   "author": {
     "name": "Andrii Myroniuk",
     "email": "andrii.myroniuk@shelf.io",
@@ -70,8 +70,8 @@
   "lint-staged": {
     "*.{html,md,yml}": "oxfmt --no-error-on-unmatched-pattern",
     "*.{js,ts,json}": [
-      "oxfmt --no-error-on-unmatched-pattern",
-      "eslint --fix"
+      "eslint --fix",
+      "oxfmt --no-error-on-unmatched-pattern"
     ]
   }
 }
