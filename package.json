@@ -58,7 +58,7 @@
     "jest": "30.4.2",
     "knip": "6.38.0",
     "lint-staged": "15.2.10",
-    "oxfmt": "0.64.0",
+    "oxfmt": "0.70.0",
     "typescript": "6.0.3"
   },
   "engines": {
