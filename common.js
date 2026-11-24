@@ -7,14 +7,14 @@ import * as esbuild from 'esbuild';
  *
  * @param {object} options - The options for building the project
  * @param {string[]} [options.entryPoints=['src/index.ts']] - An array of entry points for the build process
- * @param {string[]} [options.target=['esnext', 'node16']] - An array of target environments for the build process
+ * @param {string[]} [options.target=['esnext', 'node26']] - An array of target environments for the build process
  * @param {object} [options.config] - Additional configuration options for the build process
  * @param {string} [options.platform='browser'] - The platform to build for (browser or node)
  * @param {boolean} [options.metafile=false] - Whether to generate a metafile during the build process
  */
 const build = async ({
   entryPoints = ['src/index.ts'],
-  target = ['esnext', 'node16'],
+  target = ['esnext', 'node26'],
   config,
   platform = 'node',
   metafile = false,
